@@ -1,0 +1,7 @@
+replicaCount: 1
+name: dotnet-helm-test-api
+image:
+  repository: sekharinweb/dotnettestapi
+  pullPolicy: IfNotPresent
+service:
+  type: NodePort
