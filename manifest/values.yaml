@@ -1,8 +1,9 @@
 replicaCount: 1
-name: dotnet-helm-test-api
+name: dotnettestapi
 image:
   repository: sekharinweb/dotnettestapi
   pullPolicy: IfNotPresent
 service:
   type: NodePort
 tag: latest
+namespace: dev
