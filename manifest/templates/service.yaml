@@ -1,12 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  "{{ .Values.name }}-service"
+  name: "{{ .Values.name }}-service"
 spec:
   selector:
     app: {{ .Values.name }}
-  type: NodePort
   ports:
-  - name: http
-    port: 80
-    targetPort: 5140
+    - name: http
+      port: 80
+      targetPort: 5140
