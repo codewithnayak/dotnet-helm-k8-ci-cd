@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  namespace: {{ .Values.namespace }}
-  name: "{{ .Values.name }}-service"
+  namespace: develop
+  name: dotnettestapi-service
 spec:
   selector:
-    app: {{ .Values.name }}
+    app: dotnettestapi
   ports:
     - name: http
       port: 80

@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.name }}
-  namespace: dev
+  name: dotnettestapi
+  namespace: develop
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ .Values.name }}
+      app: dotnettestapi
   template:
     metadata:
       labels:
-        app: {{ .Values.name }}
+        app: dotnettestapi
     spec:
       containers:
-        - name: {{ .Values.name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.tag }}"
+        - name: dotnettestapi
+          image: sekharinweb/dotnettestapi:1.69.0
           imagePullPolicy: Always
           ports:
             - name: http
