@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: dotnettestapi
-          image: sekharinweb/dotnettestapi:1.69.0
+          image: sekharinweb/dotnettestapi:1.16.0
           imagePullPolicy: Always
           ports:
             - name: http
